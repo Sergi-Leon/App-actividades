@@ -18,6 +18,7 @@
 
 <body>
 <?php
+// Definimos variables de sesión
     session_start();
     const SERVIDOR = "localhost";
     const USER = "root";
@@ -31,6 +32,7 @@
     //     header('Location:login.php');
     // }
 ?>
+<!-- Menu top -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">#AppName</a>

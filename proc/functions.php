@@ -1,4 +1,5 @@
 <?php
+// Funcion para conseguir cuantos likes tienen las actividades
 function getLikes($i){
     $SERVIDOR = "localhost";
     $USER = "root";
@@ -14,7 +15,7 @@ function getLikes($i){
     }
     //return $listaLikes;
 }
-
+// Detectar que el usuario activo le ha dado like
 function myLike($u, $a){
     $SERVIDOR = "localhost";
     $USER = "root";
@@ -32,22 +33,6 @@ function myLike($u, $a){
         }
     }
 }
-//$isLike=myLike(1, 66);
 
-// function ShowTop($i){
-//     $SERVIDOR = "localhost";
-//     $USER = "root";
-//     $PASSWD = "";
-//     $BD = "db_appactiv"; 
-//     $conexion=mysqli_connect($SERVIDOR,$USER,$PASSWD,$BD);
-//     $sqltop="SELECT * FROM `tbl_likes` WHERE id_act = $i";
-//     $top5=mysqli_query($conexion,$sql);
-//     foreach ($top5 AS $actividad){
-//         $rutacompleta="http://".$ruta.$actividad['imagen_act'];
-//         echo'<div class="column-4 padding-s">';
-//         echo "<a href='./miActividad.php?id={$actividad["id_act"]}'><img class='imgMyAct' src='{$rutacompleta}'></a>";
-//         echo'</div>';
-//     }
-// }
 
 

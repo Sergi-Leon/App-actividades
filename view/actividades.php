@@ -31,8 +31,11 @@ function copyToClipboard(enlace) {
 }
 </script>
     <?php
+    // Iniciamos sesión
     session_start();
+    // Añadimos el documento con funciones
     include '../proc/functions.php ';
+    // Conexión a base de datos
     const SERVIDOR = "localhost";
     const USER = "root";
     const PASSWD = "";
@@ -45,6 +48,7 @@ function copyToClipboard(enlace) {
     $sqlTop="SELECT id_act, count(id_act) from tbl_likes group by id_act order by count(id_act) asc LIMIT 0,5;";
     $listaTop=mysqli_query($conexion,$sqlTop);
     ?>
+    <!-- Top Menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">#AppName</a>
@@ -78,7 +82,7 @@ function copyToClipboard(enlace) {
             </div>
         </div>
     </nav>
-    <!-- Top -->
+    <!-- Top 5 actividades -->
     <div class="row-c padding-m">
         <h4 class="column-1 padding-m">Top 5</h4>
         <div class="column-1 padding-s">
@@ -95,22 +99,6 @@ function copyToClipboard(enlace) {
                 }
             }
         ?>        
-            <!-- <div class="column-5 padding-s">
-                <img src="../img/keila-hotzel-lFmuWU0tv4M-unsplash.jpg" alt="" class="target-s">
-            </div>
-            <div class="column-5 padding-s">
-                <img src="../img/susanna-marsiglia-Yjr6EafseQ8-unsplash.jpg" alt="" class="target-s">
-            </div>
-            <div class="column-5 padding-s">
-                <img src="../img/dan-cristian-padure-QQkQcaz7qmY-unsplash.jpg" alt="" class="target-s">
-            </div>
-            <div class="column-5 padding-s">
-                <img src="../img/nick-fewings-EkyuhD7uwSM-unsplash.jpg" alt="" class="target-s">
-            </div>
-            <div class="column-5 padding-s">
-                <img src="../img/etienne-girardet-j2Soo4TfFMk-unsplash.jpg" alt="" class="target-s">
-            </div> -->
-
         </div>
 
     </div>
@@ -121,6 +109,7 @@ function copyToClipboard(enlace) {
             <h4 class="padding-m">Explora</h4>
         </div>
         <?php
+        // Mostramos todas las actividades y sus funcionalidades
         foreach($listaActividad AS $actividad){
             $numlikes=getLikes($actividad["id_act"]);
             $mylike=0;
@@ -132,7 +121,9 @@ function copyToClipboard(enlace) {
             echo'<div class="column-3 padding-mobile">';
             echo "<a href='./miActividad.php?id={$actividad["id_act"]}'><img class='imgMyAct borderimg' src='{$rutacompleta}'></a>";
             echo'<div style="float: right;" class="padding-m">';
+            // Botón de copiar en el ClipBoard
                     echo"<button onclick='copyToClipboard(".$idlink.")' class='btn btn-light m-1' type='submit'><i class='fa-solid fa-link'></i></button>";
+            //Botón de likes y detectar si son del usuario activo    
                     if($mylike && isset($_SESSION['usuario'])){
                         echo"<a href='../proc/like.php?id={$actividad["id_act"]}'><button class='btn btn-light m-1' type='submit'><i class='fa-solid fa-heart'></i></button></a>";
                     }else{

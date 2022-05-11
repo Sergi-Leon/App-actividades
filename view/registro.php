@@ -10,6 +10,7 @@
 <body id="registro">
     <div class="registro">
         <h1>Registrarse</h1>
+        <!-- Formulario de registro -->
         <form action="../proc/checkregister.php" method="post">
             <input class="registroform" type="text" name="usuario" placeholder="Usuario" Required>
             <br>

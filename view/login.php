@@ -10,6 +10,7 @@
 <body id="login">
     <div class="login">
         <h1>Inicio de sesión</h1>
+        <!-- Formulario para iniciar sesión -->
         <form action="../proc/checklogin.php" method="post">
             <input class="loginform" type="text" name="user" placeholder="Usuario" Required>
             <br>
@@ -18,6 +19,7 @@
             <input id="loginButton" type="submit" value="Iniciar" name="enviar">
         </form> 
         <?php
+        // Mostramos mensaje de error en caso de fallo en el login
         if(isset($_GET['msg'])){
             echo'<p id="loginerror">Usuario o contraseña incorrecto</p>';     
         }

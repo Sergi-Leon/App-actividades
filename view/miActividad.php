@@ -17,7 +17,7 @@
 </head>
 <body>
     <?php
-// Definimos variables
+// Definimos variables de conexión a la base de datos
     const SERVIDOR = "localhost";
     const USER = "root";
     const PASSWD = "";

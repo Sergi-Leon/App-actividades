@@ -28,8 +28,11 @@ function copyToClipboard(enlace) {
 }
 </script>
 <?php
+// Iniciamos sesión
     session_start();
+// Cargamos functions.php
     include '../proc/functions.php ';
+// Definimos variables de conexión a Base de datos
     $id=$_GET['id'];
     const SERVIDOR = "localhost";
     const USER = "root";
@@ -42,7 +45,7 @@ function copyToClipboard(enlace) {
     $listaActividad=mysqli_query($conexion,$sql);
     $ruta=$_SERVER['SERVER_NAME']."/www/APP-ACTIVIDADES/img/";
     ?>
-
+<!-- Top menu -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">#AppName</a>
@@ -79,6 +82,7 @@ function copyToClipboard(enlace) {
     <div class="row-c">
         <div class="column-1 padding-m">
             <?php
+            // Mostramos el titulo del topic
             foreach($listaTitulo AS $titulo){
                 echo"<h2 class='padding-m aligntext'>{$titulo["topic_top"]}</h2>";
             }
@@ -86,6 +90,7 @@ function copyToClipboard(enlace) {
             <h4 class="padding-m">Explora</h4>
         </div>
         <?php
+        // Mostramos actividades relacionadas con el topic
         foreach($listaActividad AS $actividad){
             $numlikes=getLikes($actividad["id_act"]);
             $mylike=0;

@@ -11,10 +11,12 @@
     <div class="subirAct">
         <h1>Subir actividades</h1>
         <?php
+        // Si no hay un usuario iniciado te devuelve a la pagina de login
         session_start();
         if(!isset($_SESSION['usuario'])){
             header('Location:login.php');
         }   
+        // Definimos variables de sesión
         const SERVIDOR = "localhost";
         const USER = "root";
         const PASSWD = "";
@@ -23,6 +25,7 @@
         $sql="SELECT * FROM tbl_topic;";
         $listaTopic=mysqli_query($conexion,$sql);
         ?>
+        <!-- Formulario con de subir actividad -->
         <form action="../proc/procSubirActiv.php" method="post" Enctype="multipart/form-data">
             <input class="subirActform" type="text" name="titulo" placeholder="Introduce un título" required>
             <br>

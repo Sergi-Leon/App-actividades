@@ -77,6 +77,7 @@
         $ruta=$_SERVER['SERVER_NAME']."/www/APP-ACTIVIDADES/img/";
         $actCount=0;
         echo '<div class="row-c">';
+        // Mostramos las actividades
         foreach($listaActividad AS $actividad){
             if($actCount % 3 ==0 && $actCount!=0){
                 echo"</div>";
@@ -93,6 +94,7 @@
             //echo '<p class="desc">'.$actividad["fechaSub_act"].'</p>';
             echo"</div>";
         }
+        // Esto muestra el numero de actividades que tiene el usuario
         echo"</div>";
         echo '<p class="aligntext margen" id="subirActButton">'.$actCount.' actividades</p>';
     ?>

@@ -11,7 +11,7 @@ const USER = "root";
 const PASSWD = "";
 const BD = "db_appactiv";
 
-
+// Comprobamos si venimos del formulario
 if (isset($_POST['enviar'])) {
     //Con este if comparamos si las 2 contraseñas son iguales
     if ($password == $password2) {
