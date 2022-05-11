@@ -21,7 +21,6 @@
 
 <body>
 <!-- Función de JavaScript para el botón de guardar enlace -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 function copyToClipboard(enlace) {
     var input = 'http://localhost/www/App-actividades/view/miActividad.php?id=';
