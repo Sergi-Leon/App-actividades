@@ -1,3 +1,4 @@
+#Usuario y contraseña para hacer pruebas -> usuario: jorge contraseña:
 # Evolucionar un sistema de gestión de información
 
 La necesidad de compartir ideas y pensamientos siempre ha estado tangible en la sociedad (p. ej. Facebook, Instagram, WhatsApp...); en el mundo educativo pasa lo mismo. Para ello se propone adaptar y evolucionar una plataforma web donde cualquier persona que se dedique al mundo de la enseñanza pueda compartir sus actividades.
