@@ -37,6 +37,51 @@ strong {
         padding-left: 5%;
         padding-right: 5%;
     }
+    /* Estilos main */
+    .mainheader {
+        height: 40vh;
+    }
+    .column-2 {
+        width: 100%;
+    }
+    .column-3 {
+        width: 50%;
+    }
+    .column-4 {
+        width: 50%;
+    }
+    .column-33 {
+        width: 100%;
+    }
+    .column-66 {
+        width: 100%;
+        float: left;
+    }
+    .text-4 {
+        width: 100%;
+    }
+    .target {
+        height: 30vw;
+    }
+    .column-75 {
+        width: 100%;
+        float: left;
+    }
+    .target-s {
+        height: 15vw;
+    }
+    .padding-mobile {
+        padding: 1% 2% 1% 2%;
+    }
+    .padding-right {
+        padding-right: 2%;
+    }
+    .target-wr {
+        height: 40vw;
+    }
+    .padding-l {
+        padding: 0;
+    }
 }
 
 
@@ -51,4 +96,5 @@ strong {
     button {
         margin-bottom: 1%;
     }
+    /* Estilos main */
 }

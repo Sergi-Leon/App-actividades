@@ -1,0 +1,474 @@
+/* Estilos de Index */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+.indexbody {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #111419;
+}
+
+.ocultar {
+    display: none;
+}
+
+
+/* Inicio de sesión */
+
+.login {
+    padding-top: 1%;
+    text-align: center;
+    background-color: #787d84;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 8%;
+    height: 40vh;
+}
+
+#loginButton {
+    font-size: 20px;
+}
+
+#loginerror {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+
+#login {
+    background-color: #111419;
+}
+
+.loginform {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+
+/* Registrarse */
+
+.registro {
+    padding-top: 1%;
+    text-align: center;
+    background-color: #787d84;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 8%;
+    height: 50vh;
+}
+
+#registroButton {
+    font-size: 20px;
+}
+
+#registroerror {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    padding-top: 5vh;
+}
+
+#registro {
+    background-color: #111419;
+}
+
+.registroform {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+
+/* Subir Actividades */
+
+.subirAct {
+    padding-top: 1%;
+    text-align: center;
+    background-color: #787d84;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 8%;
+    height: 70vh;
+}
+
+#subirActButton {
+    font-size: 30px;
+}
+
+#subirActerror {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    padding-top: 5vh;
+}
+
+#subirAct {
+    background-color: #111419;
+}
+
+.subirActform {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1%;
+    width: 50%;
+}
+
+
+/* MisActividades */
+
+.imgMyAct {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    height: 25vw;
+}
+
+.margen {
+    margin-left: 5vh;
+}
+
+.closeSession {
+    float: right;
+}
+
+.desc {
+    text-align: center;
+}
+
+main {
+    padding-left: 5%;
+    padding-right: 40%;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main h1 {
+    font-size: 2.5em;
+}
+
+main p {
+    color: #d0d0d0;
+}
+
+strong {
+    color: #ffffff;
+    font-family: 'Homemade Apple', cursive;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        font-size: 1.2em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+/* Estilos Main */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    background-image: url('../img/header_background.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+}
+
+.mainbody {
+    margin: 0;
+}
+
+strong {
+    font-family: 'Homemade Apple', cursive;
+}
+
+i {
+    opacity: 0.5;
+}
+
+
+/* Clear floats after the columns */
+
+.row-c:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+}
+
+.column-33 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-66 {
+    width: 66.66%;
+    float: left;
+}
+
+
+/* Otras clases */
+
+.target {
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 25vw;
+}
+
+.target-s {
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 15vw;
+}
+
+.borderimg {
+    border-radius: 10px;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.padding-l {
+    padding: 20%;
+}
+
+.padding-m {
+    padding: 1% 3%;
+}
+
+.padding-s {
+    padding: 1%;
+}
+
+.padding-xs {
+    padding: 1%;
+}
+
+.padding-right {
+    padding-right: 10%;
+}
+
+.padding-mobile {
+    padding: 1% 2% 1% 2%;
+}
+
+.target-wr {
+    border-radius: 0;
+}
+
+
+/* Estilos MiActividad */
+
+.column-act1 {
+    width: 40%;
+    float: left;
+}
+
+.column-act2 {
+    width: 60%;
+    float: left;
+}
+
+#Actividad {
+    width: 80%;
+    float: right;
+    margin-right: 10%;
+}
+
+#Actividad_fecha {
+    display: inline;
+}
+
+#Actividad_tiempo {
+    margin-left: 10%;
+}
+
+#marginBot {
+    height: 7vh;
+}
+
+.BackbuttonMyAct {
+    margin-left: 4%;
+}
+
+.topimg {
+    width: 60%;
+}
+
+
+/* Responsive móbil */
+
+@media screen and (max-width: 800px) {
+    .aligntext {
+        text-align: center;
+        margin: auto;
+    }
+    main {
+        font-size: 1em;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    button {
+        margin-bottom: 1%;
+    }
+    /* Estilos main */
+    .column-3 {
+        width: 100%;
+    }
+    .target {
+        height: 70vw;
+    }
+    .column-3 .target {
+        border-radius: 0;
+    }
+    .padding-m {
+        padding: 1% 2% 1% 2%;
+    }
+    .padding-mobile {
+        padding: 3% 0% 3% 0%;
+    }
+    .target-s {
+        height: 45vw;
+    }
+    /* Responsive Inicio de sesión */
+    .login {
+        padding-top: 1%;
+        text-align: center;
+        background-color: #787d84;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 3%;
+        width: 70vh;
+        height: 40vh;
+    }
+    #login {
+        background-color: #111419;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Pagina nosotros */
+    .column-4 {
+        width: 50%;
+        float: left;
+    }
+    .column-5 {
+        width: 50%;
+        float: left;
+    }
+    /* Responsive Registrarse */
+    .registro {
+        padding-top: 1%;
+        text-align: center;
+        background-color: #787d84;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 3%;
+        width: 70vh;
+        height: 40vh;
+    }
+    #registro {
+        background-color: #111419;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Responsive Subir actividades */
+    .subirAct {
+        padding-top: 1%;
+        text-align: center;
+        background-color: #787d84;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 3%;
+        width: 100vh;
+        height: 50vh;
+    }
+    .subirActform {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 1%;
+        width: 50vh;
+    }
+    #subirAct {
+        background-color: #111419;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgMyAct {
+        height: 100vw;
+    }
+}
